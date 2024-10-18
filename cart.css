@@ -1,0 +1,786 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::selection{
+    background-color: black;
+    color: #fff;
+}
+*{
+    font-family: "Poppins", serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+header{
+    width: 100%;
+    background-color:#f0f0f0 ;
+    position: fixed;
+    z-index: 999;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 200px;
+}
+
+header img{
+    width: 80px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+ ul li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 2em;
+    position: relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f10707;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+ul li:hover::after{
+  
+    width: 100%;
+
+}
+body{
+    background-image: linear-gradient(rgba(13, 13, 14, 0.3),rgba(13, 13, 14, 0.3)),url(images/back-info.jpg);
+    background-size: cover;
+    background-position: cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+
+}
+
+.main h1{
+   display: flex;
+  justify-content: center;
+   align-items: center;
+   text-align: center;
+    padding: 200px 200px;
+    color: #f0f0f0;
+   
+}
+
+section{
+  
+    padding: 100px 200px;
+}
+
+.title h1{
+    margin-bottom: 100px ;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+   font-size: 3em;
+   font-weight: 600;  
+}
+
+
+.content .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 100px;
+}
+
+
+
+.content .card{
+    background-image: linear-gradient(rgba(13, 13, 14, 0.6),rgba(13, 13, 14, 0.6)), url(images/product-img.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    overflow: hidden;
+    
+
+}
+
+.card .images img{
+    display: flex;
+    width: 600px;
+    height:700px;
+ padding-right: 30px;
+   
+}
+.card .images .image-height{
+    height: 850px;
+}
+
+.content .info{
+    padding: 2em; 
+    color: #f0f0f0;
+}
+
+
+
+.content .info .ctegory{
+    font-size: 12px;
+    color: darkgrey;
+   padding-bottom: 2em;
+    letter-spacing: 2px;
+}
+
+.content .info .subject{
+    padding: 20px 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.content .info .pargraph{
+    letter-spacing: 1px;
+   line-height: 1.7;
+   font-size: 16px;
+   padding: 10px;
+   padding-bottom: 50px;
+   font-weight: 500;
+   color: darkgray;
+}
+
+.content .info .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 30px;
+ 
+  
+
+}
+
+.content .info .price .discount{
+    padding-right: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: blanchedalmond;
+}
+
+.content .info .price .before{
+    
+    font-size: 1.3em;
+    font-weight: 600;
+    color: darkgrey;
+}
+
+
+.content .info .test{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.content .info .btn{
+   border: none;
+   padding: 20px;
+   border-radius: 15px;
+   background-color:black;
+   color: #f0f0f0;
+   letter-spacing: 1px;
+   font-size: 1.1em;
+   font-weight: 500;
+  transition: 0.5s ease;
+   cursor: pointer;
+  
+}
+.content .info .btn:hover{
+    transform: scale(1.1);
+    background-color: bisque;
+    color: black;
+}
+
+.content .info .btn i{
+    padding-right: 5px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.container .contact-info{
+  
+    padding-right: 100px;
+    color: #f0f0f0;
+    
+}
+
+.container .contact-info h3{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    font-weight: 800;
+
+}
+
+.container .contact-info p{
+    text-align: justify;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.container .contact-info i{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+.container .contact-info .icons a{
+    padding-left: 30px;
+}
+
+.container .contact-info .icons i{
+    color: #f0f0f0;
+    font-size: 1.5em;
+   padding: 15px;
+    background-color:black;
+    border-radius: 70%;
+    transition: 0.5s ease;
+}
+
+.container .contact-info .icons i:hover{
+    transform: scale(1.1);
+    color: goldenrod;
+
+}
+
+.container .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 50%;
+}
+
+.container .form input , textarea{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container .form .btn{
+    display: block;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    color:white;
+    background-color: black;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    transition: 0.5s ease;
+}
+
+.container .form .btn:hover{
+    transform: scale(1.1);
+    background-color: goldenrod;
+    color: black;
+}
+
+footer{
+     
+    width: 100%;
+    background-color:#f0f0f0 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+footer i{
+    color:black;
+    font-size: 1.7em;
+   padding: 15px;
+  
+    border-radius: 70%;
+    transition: 0.5s ease; 
+}
+
+@media (max-width:1410px){
+     body{
+        font-size: 14px;
+     }
+
+     section{
+        padding: 50px 100px;
+     }
+
+}
+
+@media (max-width:1195px){
+    body{
+       font-size: 14px;
+    }
+
+    section{
+       padding: 30px 50px;
+    }
+    .card .images .image-height{
+        height: 1000px;
+    }
+    
+.card .images img{
+ 
+    width: 600px;
+    height:750px;
+ padding-right: 30px;
+   
+}
+
+
+
+}
+
+
+@media (max-width:1055px){
+    body{
+       font-size: 14px;
+    }
+
+    header{
+        padding:10px 100px;
+    }
+
+    section{
+       padding: 10px 30px;
+    }
+
+    .content .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card .images img{
+        display: flex;
+        width: 1100px;
+        height:800px;
+     padding-right: 30px;
+       
+    }
+    .container{
+        display: flex;
+      align-items: center;
+        flex-direction: column;
+       
+    }
+    .container .contact-info{
+  
+        padding:0px;
+        margin-bottom: 50px;
+
+        color: #f0f0f0;
+        
+    }
+    
+.container .contact-info i{
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+.container .form{
+   
+   width: 100%;
+}
+.card .images .image-height{
+    height: 800px;
+}
+}
+
+
+@media (max-width:800px){
+    body{
+       font-size: 14px;
+    }
+
+    header{
+        padding:10px 50px;
+    }
+
+    section{
+       padding: 10px 30px;
+    }
+
+    .content .card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card .images img{
+        display: flex;
+        width: 800px;
+        height:600px;
+     
+       
+    }
+    .card .images .image-height{
+        height: 400px;
+    }
+
+    .container{
+        display: flex;
+      align-items: center;
+        flex-direction: column;
+       
+    }
+    .container .contact-info{
+  
+        padding:0px;
+        margin-bottom: 50px;
+
+        color: #f0f0f0;
+        
+    }
+    
+.container .contact-info i{
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+.container .form{
+   
+   width: 100%;
+}
+footer{
+   
+  padding: 10px 30px;
+}
+
+}
+
+
+@media (max-width:695px){
+    body{
+        font-size: 12px;
+     }
+ 
+     header{
+         padding:10px 40px;
+     }
+     
+header img{
+    width: 50px;
+}
+
+ul li{
+ 
+    padding-left: 1.5em;
+   
+}
+
+
+     
+     .card .images img{
+       
+        width: 655px;
+        height:400px;
+    
+       
+    }
+    .content .info .subject{
+        font-size: 1.7em;
+    }
+    .content .info .pargraph{
+        font-size: 1em;
+    }
+    .card .images .image-height{
+        height: 400px;
+    }
+}
+
+
+
+@media (max-width:550px){
+    header{
+      
+       padding: 10px 40px;
+    }
+    header img{
+        width: 50px;
+    }
+    ul li{
+      
+        padding-left: 1em;
+       
+    }
+    ul li a{
+    
+        font-size: 0.8em;
+    }
+    footer{
+   
+        padding: 10px 20px;
+      }
+      footer i{
+        color:black;
+        font-size: 1.3em;
+       padding: 2px;
+      
+    }
+      
+}
+
+@media (max-width:440px){
+    
+header img{
+    width: 40px;
+}
+   
+    ul li{
+        
+        padding-left: 0.6em;
+        
+    }
+    section{
+        padding: 10px 20px;
+        margin: 30px;
+     }
+     
+     .title h1{
+        margin-bottom: 50px ;
+       font-size: 2em;
+       font-weight: 500;  
+    }
+    .card .images img{
+        display: flex;
+        width: 460px;
+        height:300px;
+     padding-right: 30px;
+       
+    }
+    .content .info{
+        padding: 1em; 
+       
+    }
+    .content .info .ctegory{
+        font-size: 10px;
+       padding-bottom: 1em;
+    
+    }
+    .content .info .subject{
+        padding: 10px 0;
+        font-size: 1.4em;
+    }
+    .content .info .pargraph{
+       line-height: 1.5;
+       font-size: 10px;
+       padding-bottom: 30px;
+      
+    }
+    .content .info .btn{
+       
+        padding: 13px;
+        border-radius: 15px
+     }
+     .content .info .price{
+       padding: 20px;
+     
+      
+    
+    }
+    .container .form .btn{
+     
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 10px;
+        margin-top: 30px;
+      
+    }
+}
+
+
+@media (max-width:400px){
+ 
+    header{
+        width: 100%;
+       padding: 10px 30px;
+    }
+    
+header img{
+    width: 40px;
+}
+ul li{
+  
+    padding-left: 1em;
+   
+}
+ul li a{
+
+    font-size: .8em;
+}
+
+
+
+    .content .info .subject{
+        padding: 10px 0;
+        font-size: 1.5em;
+      
+    }
+    section{
+        margin-left: 50px;
+    }
+
+  
+.content .info .pargraph{
+   padding-bottom: 10px;
+  
+}
+    .container .contact-info{
+  
+        padding-right: 0px;
+        
+    }
+
+    .container .contact-info h3{
+        font-size: 1.3em;
+        padding-bottom: 20px;
+     
+    
+    }
+
+    .container .contact-info p{
+      
+        padding-bottom: 20px;
+        font-size: 1em;
+     
+        padding-left:0px;
+    }
+
+    .container .contact-info i{
+        padding-right: 5px;
+        font-size: 1em;
+    }
+
+    .container .contact-info .icons i{
+      
+        font-size: 1.3em;
+       padding: 10px;
+      
+    }
+
+
+    .container .form input , textarea{
+     
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+
+footer{
+    width: 103%;
+  padding: 10px 10px;
+}
+
+}
+
+@media (max-width:390px){
+
+
+    header{
+        width: 100%;
+       padding: 10px 20px;
+    }
+  
+
+    
+    ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.8em;
+    }
+
+    .content .info .subject{
+        padding: 10px 0;
+        font-size: 1.5em;
+      
+    }
+    section{
+        margin-left: 20%;
+       
+    }
+
+    
+.card .images img{
+ 
+    width: 300px;
+    height:200px;
+ padding-right: 30px;
+   
+}
+
+.card .images .image-height{
+    width: 310px;
+    height: 200px;
+}
+
+
+.content .info .subject{
+    padding: 10px 0;
+    font-size: 1.3em;
+  
+}
+   
+.content .info .pargraph{
+    padding-bottom: 5px;
+   
+ }
+ 
+.content .info .btn{
+  
+    padding: 10px;
+    border-radius: 20px;
+    font-size:0.8em;
+   
+     }
+ 
+    
+ 
+     .container .contact-info p{
+       
+         padding-bottom: 10px;
+         font-size: 1em;
+        
+     }
+ 
+     .container .contact-info i{
+         padding-right:5px;
+         font-size: 1em;
+     }
+ 
+     .container .contact-info .icons i{
+       
+         font-size: 0.8em;
+        padding: 6px;
+       
+     }
+     footer{
+     
+        width: 120%;
+       
+      padding: 10px 10px;
+    }
+}
